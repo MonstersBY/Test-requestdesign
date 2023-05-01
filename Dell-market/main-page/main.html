@@ -12,8 +12,8 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="head-left">
+        <div class="container header__desktop">
+            <div class="header__left">
                 <div class="head-logo">
                     <img src="../assets/imgs/LOGO.png" alt="logo">
                 </div>
@@ -36,7 +36,7 @@
                     <span><img src="../assets/icons/search_shopping.svg" alt="search"></span>
                 </div>
             </div>
-            <div class="head-right">
+            <div class="head__right">
                 <div>
                     <span><img src="../assets/icons/account.svg" alt="account"></span>
                 </div>
@@ -52,19 +52,48 @@
                 </div>
             </div>
         </div>
+        <div class="container header__mobile">
+            <div class="header__left">
+                <div class="head-logo">
+                    <img src="../assets/imgs/LOGO.png" alt="logo">
+                </div>
+            </div>
+            <div class="head__right">
+                <div class="head-search">
+                    <span><img src="../assets/icons/search_shopping.svg" alt="search"></span>
+                </div>
+                <div>
+                    <span><img src="../assets/icons/account.svg" alt="account"></span>
+                </div>
+                <div>
+                    <span><img src="../assets/icons/bag.svg" alt="bag"></span>
+                    <span class="bag-count">3</span>
+                </div>
+                <div>
+                    <span class="hamburger"></span>
+                </div>
+            </div>
+            <div class="header__menu">
+                <div><a href="">Главная</a></div>
+                <div><a href="">Каталог</a></div>
+                <div><a href="">Новости</a></div>
+                <div><a href="">Наш Асц</a></div>
+                <div><a href="">Контакты</a></div>
+            </div>
+        </div>
     </header>
     <section id="intro">
         <div class="container">
             <div class="scroll">
-                <div class="scroll-text"><span>Scroll to catalog</span></div>
-                <div class="scroll-img"><img src="../assets/icons/scroll.png" alt="scroll"></div>
+                <div class="scroll__text"><span>Scroll to catalog</span></div>
+                <div class="scroll__img"><img src="../assets/icons/scroll.png" alt="scroll"></div>
             </div>
             <div class="carousel">
                 <div class="carousel-container">
                     <div class="carousel-container__text">
                         <div class="carousel-container__text--topic">Новое поступление</div>
                         <div class="carousel-container__text--main">Лучшие товары от компании Dell</div>
-                        <div class="carousel-container__text--button next-button"><div class="btn btn-blue">→</div><div class="btn-text">Побробнее</div>
+                        <div class="carousel-container__text--button next-button"><div class="btn btn-blue">→</div><div class="btn-text">Подробнее</div>
                         </div>
                     </div>
                     <div class="carousel-container__img">
@@ -78,45 +107,46 @@
                     <div class="dot"></div>
                     <div class="dot"></div>
                 </div>
+                <div class="carousel-arrow"><img src="../assets/icons/Vector.svg" alt="arrow"></div>
             </div>
             <div class="deals">
                 <div class="deals--text">Выгодное предложение от Dell</div>
-                <div class="deals--arrow"><img src="../assets/icons/Vector.svg" alt="arrow"></div>
+                
             </div>
         </div>
     </section>
     <section id="catalog">
         <div class="container">
-            <div class="card catalog__info">
+            <div class="catalog__info">
                 <div class="catalog__info--topic">Каталог товаров от Dell</div>
                 <div class="catalog__info--text">Наша компания является зарегистрированным и официальным партнером Dell в России</div>
                 <div class="catalog__text--button next-button"><div class="btn btn-blue">→</div><div class="btn-text">В каталог</div></div>
             </div>
-            <div class="card">
+            <div class="catalog__card">
                 <div class="card--number">01</div>
                 <div class="card--img first"><img src="../assets/imgs/catalog/1-laptop.png" alt="product"></div>
                 <div class="card--stock">105 товаров</div>
                 <div class="card--name">Ноутбуки</div>
             </div>
-            <div class="card">
+            <div class="catalog__card">
                 <div class="card--number">02</div>
                 <div class="card--img second"><img src="../assets/imgs/catalog/2-pc.png" alt="product"></div>
                 <div class="card--stock">65 товаров</div>
                 <div class="card--name">Персональные компьютеры</div>
             </div>
-            <div class="card">
+            <div class="catalog__card">
                 <div class="card--number">03</div>
                 <div class="card--img three"><img src="../assets/imgs/catalog/3-server.png" alt="product"></div>
                 <div class="card--stock">13 товаров</div>
                 <div class="card--name">Серверы</div>
             </div>
-            <div class="card">
+            <div class="catalog__card">
                 <div class="card--number">04</div>
                 <div class="card--img four"><img src="../assets/imgs/catalog/4-emc.png" alt="product"></div>
                 <div class="card--stock">2345 товаров</div>
                 <div class="card--name">Dell EMC</div>
             </div>
-            <div class="card">
+            <div class="catalog__card">
                 <div class="card--number">05</div>
                 <div class="card--img five"><img src="../assets/imgs/catalog/5-part-emc.png" alt="product"></div>
                 <div class="card--stock">195 товаров</div>
@@ -165,7 +195,7 @@
                     <div class="news__intro--topic">Последние новости</div>
                     <div class="news__intro--text">Вы можете посмотреть ещё больше интересных новостей и узнать о последних новинках, перейдя по кнопке</div>
                 </div>
-                <div class="news__intro--button next-button"><div class="btn-text">Все новости</div><div class="btn btn-blue">→</div></div>
+                <div class="news__intro--button next-button"><div class="btn btn-blue">→</div><div class="btn-text">Все новости</div></div>
             </div>
             <div class="news__cards">
                 <div class="news__card">
@@ -259,7 +289,7 @@
         <div class="container">
             <div class="contacts__info">
                 <div class="contacts__info--title">Наши контакты</div>
-                <div class="contacts__info--description">Вы можете связаться с нашим онлайн-консультантом</div>
+                <div class="contacts__info--description">Вы можете связаться с нашим онлайн-консультантом</div>
                 <div class="contacts__info--address contacts__info--col">
                     <div class="contacts__info--icon"><img src="../assets/icons/location.png" alt="icon"></div>
                     <div class="contacts__info--topic">Адрес</div>
@@ -297,20 +327,28 @@
                 </labe>
                 <div class="contacts__application--btn next-button"><div class="btn btn-blue">→</div><div class="btn-text">Заказать</div></div>
             </div>
-            <img class="contacts__img" src="../assets/imgs/contact-phone.png" alt="phone">
         </div>
     </section>
+     
     <footer>
         <div class="container">
             <div class="footer__links">
                 <div class="footer__links--logo"><img src="../assets/imgs/LOGO.png" alt="logo"></div>
-                <div class="footer__links--catalog">
+                <div class="footer__links--catalog catalog__desktop">
                     <div class="footer__links--title">Каталог</div>
                     <div class="footer__links--link"><a href="">Ноутбуки</a></div>
                     <div class="footer__links--link"><a href="">Персональные компьютеры</a></div>
                     <div class="footer__links--link"><a href="">Серверы</a></div>
                     <div class="footer__links--link"><a href="">Dell EMC</a></div>
                     <div class="footer__links--link"><a href="">Запасные части к Dell EMC</a></div>
+                </div>
+                <div class="footer__links--catalog catalog__mobile">
+                    <div class="footer__links--title">Каталог</div>
+                    <div class="footer__links--link"><a href="">Персональные компьютеры</a></div>
+                    <div class="footer__links--link"><a href="">Запасные части к Dell EMC</a></div>
+                    <div class="footer__links--link"><a href="">Ноутбуки</a></div>
+                    <div class="footer__links--link"><a href="">Серверы</a></div>
+                    <div class="footer__links--link"><a href="">Dell EMC</a></div>
                 </div>
                 <div class="footer__links--personal">
                     <div class="footer__links--title">Личный кабинет</div>
@@ -349,6 +387,7 @@
             </div>
         </div>
     </footer>
+    
     <script type="module" src="main.js"></script> 
 </body>
 </html>
