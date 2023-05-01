@@ -611,7 +611,8 @@ header a {
     height: 842px;
     background-color: #F9F9F9;
     top: -346px;
-    left: 13.5%;
+    left: 0;
+    right: 0;
     border-radius: 20px;
 }
 .contacts__info {
